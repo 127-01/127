@@ -1,0 +1,27 @@
+### publish video
+POST http://localhost:8080/douyin/publish/action
+Cache-Control: no-cache
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+# name接口定义的参数名，filename 文件名（我们可以自己取名字）
+--WebAppBoundary
+Content-Disposition: form-data; name="data"; filename="/test/ttt.mp4"
+Content-Type: multipart/form-data
+
+#文件地址 （注意⚠️，这个地方上面一定要空一行，不然文件上传失败，文件大小为0；多谢【简悦Pro】提醒；图片就不更新了）
+< ../test_files/ttt.mp4
+--WebAppBoundary--
+Content-Disposition: form-data; name="token"
+Content-Type: multipart/form-data
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ0aWt0b2stbGl0ZSIsImV4cCI6MTY3Njg4MDQ0OCwibmJmIjoxNjc2Nzk0MDQ4LCJpYXQiOjE2NzY3OTQwNDgsInVzZXJfaWQiOiIxIn0.KtdmsoPFIOHWRiWI-LPIcwNoZ1Jw4N3Ya5CYD6jHiZw
+--WebAppBoundary--
+Content-Disposition: form-data; name="title"
+Content-Type: multipart/form-data
+
+test
+--WebAppBoundary--
+
+### get video list
+GET http://localhost:8080/douyin/publish/list?token={{token}}&user_id=1
+

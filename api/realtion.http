@@ -1,0 +1,14 @@
+
+### follow you
+POST http://localhost:8080/douyin/relation/action?token={{token2}}&to_user_id=1&action_type=1
+
+### unfollow you
+POST http://localhost:8080/douyin/relation/action?token={{token2}}&to_user_id=3&action_type=2
+
+### get follow list
+GET http://localhost:8080/douyin/relation/follow/list/?token={{token}}&user_id=1
+### get follower list
+GET http://localhost:8080/douyin/relation/follower/list/?token={{token}}&user_id=1
+
+### get friend list
+GET http://localhost:8080/douyin/relation/friend/list/?token={{token}}&user_id=1

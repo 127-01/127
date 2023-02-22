@@ -1,0 +1,6 @@
+
+### 发送消息
+POST http://localhost:8080/douyin/message/action/?token={{token}}&to_user_id=1&action_type=1&content=sdad
+
+### 获取消息列表
+GET http://localhost:8080/douyin/message/chat/?token={{token}}&to_user_id=3&pre_msg_time=1676797715000

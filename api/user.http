@@ -1,0 +1,23 @@
+
+### user info
+GET http://localhost:8080/douyin/user/?user_id=1&token={{token}}
+
+### login
+POST http://localhost:8080/douyin/user/login/
+Content-Type: application/json
+
+{
+    "username": "chenshone",
+    "password": "123456"
+}
+
+### register
+POST http://localhost:8080/douyin/user/register/
+Content-Type: application/json
+
+{
+    "username": "30man2i3jf2j3f9nwc2f2948h2h4024hg20h0kdajsn2n03031",
+    "password": "123456"
+}
+
+

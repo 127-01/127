@@ -1,0 +1,9 @@
+
+### comment add
+POST http://localhost:8080/douyin/comment/action?token={{token}}&video_id=14&action_type=1&comment_text=
+
+### comment remove
+POST http://localhost:8080/douyin/comment/action?token={{token}}&video_id=14&action_type=2&comment_id=14
+
+### comment list
+GET http://localhost:8080/douyin/comment/list?token={{token}}&video_id=1299

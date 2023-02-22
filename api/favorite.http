@@ -1,0 +1,9 @@
+
+### favorite list
+GET http://localhost:8080/douyin/favorite/list?token={{token}}&user_id=1
+
+### favorite add
+POST http://localhost:8080/douyin/favorite/action?token={{token}}&video_id=14&action_type=1
+
+### favorite remove
+POST http://localhost:8080/douyin/favorite/action?token={{token}}&video_id=14&action_type=2
